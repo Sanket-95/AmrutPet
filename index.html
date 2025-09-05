@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ecommerce Demo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-size: 1.13rem; /* Slightly larger font */
+        }
+        .navbar {
+            background-color: #e0e0e0 !important;
+            min-height: 80px;
+            font-size: 1.13rem; /* Slightly larger font */
+        }
+        .navbar .navbar-brand img {
+            width: 48px;
+            height: 48px;
+        }
+        .navbar .form-control {
+            font-size: 1.13rem;
+        }
+        .navbar .btn,
+        .navbar .bi {
+            font-size: 1.18rem;
+        }
+        .category-link {
+            background: linear-gradient(90deg, #6dd5ed 0%, #2193b0 100%);
+            color: #fff !important;
+            transition: all 0.2s;
+            border: none;
+            font-size: 1.12rem;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 12px rgba(33,147,176,0.08);
+            text-decoration: none !important;
+        }
+        .category-link:hover {
+            background: linear-gradient(90deg, #2193b0 0%, #6dd5ed 100%);
+            color: #fff !important;
+            box-shadow: 0 4px 16px rgba(33,147,176,0.15);
+            transform: translateY(-2px) scale(1.05);
+        }
+        /* Amazon-like category link styles */
+        .category-link-amazon {
+            background: transparent;
+            color: #fff !important;
+            transition: background 0.2s, color 0.2s;
+            font-size: 1.13rem; /* Slightly larger font */
+            text-decoration: none !important;
+            border: none;
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+        }
+        .category-link-amazon:hover, .category-link-amazon:focus {
+            background: #37475a;
+            color: #febd69 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <!-- <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="Company Logo" class="me-2 rounded-circle" style="background: white; padding: 4px;">
+            </a> -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.jpeg" alt="Company Logo" 
+                    style="height: 50px; width: auto; object-fit: contain;">
+            </a>
+            <!-- Search Box -->
+            <form class="d-flex mx-auto w-50">
+                <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+            <!-- Profile, Login, Cart -->
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class="text-secondary" title="Profile"><i class="bi bi-person-circle fs-4"></i></a>
+                <a href="#" class="btn btn-outline-primary btn-sm">Login</a>
+                <a href="#" class="text-secondary position-relative" title="Cart">
+                    <i class="bi bi-cart3 fs-4"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Category Bar Start -->
+    <div class="container-fluid py-1" style="background-color: #2d3b4a; min-height: 50px;">
+    <div class="d-flex justify-content-center gap-2 flex-wrap">
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">Food Products & Grocery</a>
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">Ayurvedic Products</a>
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">Medical Products</a>
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">Mobile & Tablets & More</a>
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">Computers & Laptop</a>
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">TV, Appliances</a>
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">Men's Fashion</a>
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">Women's Fashion</a>
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">Home, Kitchen</a>
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">Beauty, Fitness, Bags</a>
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">Toys, Baby Products Kids' Fashion</a>
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">Books & Office Stationery</a>
+        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" 
+           style="background-color: #1f2a35;">Dharmik Puja</a>
+    </div>
+</div>
+
+    <!-- Category Bar End -->
+
+    <!-- Banner Start -->
+    <!-- Banner Start -->
+   <!-- Banner Start -->
+    <!-- <div style="width: 100%; height: 350px; background-color: #4a90e2; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 2rem; font-weight: bold;">
+        <img src="YOUR_IMAGE_URL_HERE" alt="Electronics Banner" style="width: 100%; height: 350px; object-fit: cover; display: block;">
+        Electronics Banner Area
+    </div> -->
+   <div style="width: 100%; height: 650px; overflow: hidden;">
+    <img src="bnnr.png" alt="Electronics Banner" 
+         style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div>
+
+
+    <!-- Banner End -->
+     
+
+    <!-- Products Section Start -->
+<div class="container-fluid my-5">
+    <h2 class="mb-4 text-center">Featured Products</h2>
+    <div class="d-flex flex-wrap justify-content-between">
+        <!-- Product Item -->
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+1" class="card-img-top" alt="Product 1" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 1</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹999</span>
+            </div>
+        </div>
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+2" class="card-img-top" alt="Product 2" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 2</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,499</span>
+            </div>
+        </div>
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+3" class="card-img-top" alt="Product 3" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 3</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹799</span>
+            </div>
+        </div>
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+4" class="card-img-top" alt="Product 4" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 4</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,299</span>
+            </div>
+        </div>
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+5" class="card-img-top" alt="Product 5" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 5</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,999</span>
+            </div>
+        </div>
+
+        <!-- Row 2: Products 6-10 -->
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+6" class="card-img-top" alt="Product 6" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 6</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹899</span>
+            </div>
+        </div>
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+7" class="card-img-top" alt="Product 7" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 7</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,199</span>
+            </div>
+        </div>
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+8" class="card-img-top" alt="Product 8" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 8</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,399</span>
+            </div>
+        </div>
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+9" class="card-img-top" alt="Product 9" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 9</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,599</span>
+            </div>
+        </div>
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+10" class="card-img-top" alt="Product 10" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 10</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,099</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Products Section End -->
+
+
+
+<!-- Advertisement Banners Start -->
+<div class="container-fluid my-5">
+    <div class="row g-3">
+        <!-- Ad 1 -->
+        <div class="col-12 col-md-4">
+            <div style="width: 100%; height: 220px; background-color: #ffcccc; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border-radius: 8px;">
+                Advertisement 1
+            </div>
+        </div>
+        <!-- Ad 2 -->
+        <div class="col-12 col-md-4">
+            <div style="width: 100%; height: 220px; background-color: #ccffcc; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border-radius: 8px;">
+                Advertisement 2
+            </div>
+        </div>
+        <!-- Ad 3 -->
+        <div class="col-12 col-md-4">
+            <div style="width: 100%; height: 220px; background-color: #ccccff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border-radius: 8px;">
+                Advertisement 3
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Advertisement Banners End -->
+
+
+
+
+
+<!-- Products Section 2 Start -->
+<div class="container-fluid my-5">
+    <h2 class="mb-4 text-center">More Products</h2>
+    <div class="d-flex flex-wrap justify-content-between">
+        <!-- Row 1: Products 1-5 -->
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+11" class="card-img-top" alt="Product 11" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 11</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹899</span>
+            </div>
+        </div>
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+12" class="card-img-top" alt="Product 12" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 12</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,199</span>
+            </div>
+        </div>
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+13" class="card-img-top" alt="Product 13" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 13</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,499</span>
+            </div>
+        </div>
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+14" class="card-img-top" alt="Product 14" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 14</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,299</span>
+            </div>
+        </div>
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+15" class="card-img-top" alt="Product 15" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 15</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹999</span>
+            </div>
+        </div>
+
+        <!-- Row 2: Products 16-20 -->
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+16" class="card-img-top" alt="Product 16" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 16</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,099</span>
+            </div>
+        </div>
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+17" class="card-img-top" alt="Product 17" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 17</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,399</span>
+            </div>
+        </div>
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+18" class="card-img-top" alt="Product 18" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 18</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,499</span>
+            </div>
+        </div>
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+19" class="card-img-top" alt="Product 19" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 19</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,199</span>
+            </div>
+        </div>
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+20" class="card-img-top" alt="Product 20" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 20</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,099</span>
+            </div>
+        </div>
+
+        <!-- Row 3: Products 21-25 -->
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+21" class="card-img-top" alt="Product 21" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 21</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,299</span>
+            </div>
+        </div>
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+22" class="card-img-top" alt="Product 22" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 22</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,099</span>
+            </div>
+        </div>
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+23" class="card-img-top" alt="Product 23" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 23</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,399</span>
+            </div>
+        </div>
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+24" class="card-img-top" alt="Product 24" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 24</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,599</span>
+            </div>
+        </div>
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="https://via.placeholder.com/250x300.png?text=Product+25" class="card-img-top" alt="Product 25" style="height: 300px; object-fit: cover;">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 25</h6>
+                <p class="card-text text-muted small">Short description</p>
+                <span class="fw-bold">₹1,299</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Products Section 2 End -->
+
+
+<!-- Contact & Policies Section Start -->
+<div class="container-fluid py-5" style="background-color: #f8f9fa;">
+    <div class="row text-center text-md-start">
+        <!-- Contact Info -->
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <h5 class="fw-bold mb-3">Contact Us</h5>
+            <p>Email: <a href="mailto:support@example.com">support@example.com</a></p>
+            <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+            <p>Address: 123, E-commerce Street, City, India</p>
+        </div>
+
+        <!-- Policies -->
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <h5 class="fw-bold mb-3">Policies</h5>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-dark">Privacy Policy</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Terms of Service</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Return & Refund</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Shipping Info</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3">Follow Us</h5>
+            <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                <a href="#" class="text-dark fs-4"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-dark fs-4"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-dark fs-4"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-dark fs-4"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact & Policies Section End -->
+
+<!-- Footer Start -->
+<footer class="text-center py-3" style="background-color: #343a40; color: white;">
+    &copy; 2025 Your Company Name. All rights reserved.
+</footer>
+<!-- Footer End -->
+
+
+
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
