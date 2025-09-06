@@ -58,6 +58,25 @@
             background: #37475a;
             color: #febd69 !important;
         }
+         .dropdown-menu {
+            background: #f1f5f9; /* light gray-blue */
+            border-radius: 10px;
+            border: none;
+            padding: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .dropdown-item {
+            border-radius: 6px;
+            padding: 8px 14px;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .dropdown-item:hover {
+            background: #dbeafe; /* soft blue hover */
+            color: #0d6efd;     /* Bootstrap primary blue */
+            transform: translateX(4px);
+        }
     </style>
 </head>
 <body>
@@ -93,19 +112,266 @@
     <!-- Category Bar Start -->
    <div class="container-fluid" style="background-color: #2d3b4a; min-height: 45px;">
     <div class="d-flex justify-content-center gap-2 flex-wrap py-1">
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Food Products & Grocery</a>
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Ayurvedic Products</a>
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Medical Products</a>
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Mobile & Tablets & More</a>
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Computers & Laptop</a>
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">TV, Appliances</a>
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Men's Fashion</a>
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Women's Fashion</a>
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Home, Kitchen</a>
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Beauty, Fitness, Bags</a>
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Toys, Baby Products Kids' Fashion</a>
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Books & Office Stationery</a>
-        <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Dharmik Puja</a>
+         <div class="dropdown">
+            <a href="#" 
+                class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                Food Products & Grocery
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">All Grocery Products</a></li>
+                <li><a class="dropdown-item" href="#">Ready to Eat Products</a></li>
+                <li><a class="dropdown-item" href="#">Ready to Cook Products</a></li>
+                <li><a class="dropdown-item" href="#">Beverages</a></li>
+                <li><a class="dropdown-item" href="#">Spices</a></li>
+                <li><a class="dropdown-item" href="#">Sweets</a></li>
+                <li><a class="dropdown-item" href="#">Namkeen</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Food Products & Grocery</a> -->
+        <div class="dropdown">
+            <a href="#" 
+                class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                Ayurvedic Products
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ayurvedic Medicine</a></li>
+                <li><a class="dropdown-item" href="#">Ayurvedic Powder</a></li>
+                <li><a class="dropdown-item" href="#">Ayurvedic Juice</a></li>
+                <li><a class="dropdown-item" href="#">Ayurvedic Oil</a></li>
+                <li><a class="dropdown-item" href="#">Ayurvedic Skin Care</a></li>
+                <li><a class="dropdown-item" href="#">Ayurvedic Hair Care</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Ayurvedic Products</a> -->
+        <div class="dropdown">
+            <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                Medical Products
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Bath & Shower</a></li>
+                <li><a class="dropdown-item" href="#">Diet & Nutrition</a></li>
+                <li><a class="dropdown-item" href="#">Electronic Cigarettes & Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Health Care</a></li>
+                <li><a class="dropdown-item" href="#">Home Medical Equipment</a></li>
+                <li><a class="dropdown-item" href="#">Medication & Treatments</a></li>
+                <li><a class="dropdown-item" href="#">Oral Care</a></li>
+                <li><a class="dropdown-item" href="#">Personal Care</a></li>
+                <li><a class="dropdown-item" href="#">Skin Care</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Medical Products</a> -->
+         <div class="dropdown">
+            <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                Mobile & Tablets & More
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">All Mobile Phones</a></li>
+                <li><a class="dropdown-item" href="#">All Mobile Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Cases & Covers</a></li>
+                <li><a class="dropdown-item" href="#">Screen Protectors</a></li>
+                <li><a class="dropdown-item" href="#">Power Banks</a></li>
+                <li><a class="dropdown-item" href="#">Refurbished & Open Box</a></li>
+                <li><a class="dropdown-item" href="#">Tablets</a></li>
+                <li><a class="dropdown-item" href="#">Wearable Devices</a></li>
+                <li><a class="dropdown-item" href="#">Smart Home</a></li>
+                <li><a class="dropdown-item" href="#">Office Supplies & Stationery</a></li>
+                <li><a class="dropdown-item" href="#">Software</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Mobile & Tablets & More</a> -->
+        <div class="dropdown">
+            <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                Computers & Laptop
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">All Computers & Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Laptops</a></li>
+                <li><a class="dropdown-item" href="#">Drives & Storage</a></li>
+                <li><a class="dropdown-item" href="#">Printers & Ink</a></li>
+                <li><a class="dropdown-item" href="#">Networking Devices</a></li>
+                <li><a class="dropdown-item" href="#">Computer Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Game Zone</a></li>
+                <li><a class="dropdown-item" href="#">Monitors</a></li>
+                <li><a class="dropdown-item" href="#">Desktops</a></li>
+                <li><a class="dropdown-item" href="#">All Electronics</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Computers & Laptop</a> -->
+        <div class="dropdown">
+            <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                TV, Appliances
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Televisions</a></li>
+                <li><a class="dropdown-item" href="#">Home Entertainment Systems</a></li>
+                <li><a class="dropdown-item" href="#">Headphones</a></li>
+                <li><a class="dropdown-item" href="#">Speakers</a></li>
+                <li><a class="dropdown-item" href="#">Home Audio & Theatre</a></li>
+                <li><a class="dropdown-item" href="#">Cameras</a></li>
+                <li><a class="dropdown-item" href="#">DSLR Cameras</a></li>
+                <li><a class="dropdown-item" href="#">Security Cameras</a></li>
+                <li><a class="dropdown-item" href="#">Camera Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Musical Instruments & Professional Audio</a></li>
+                <li><a class="dropdown-item" href="#">Gaming Consoles</a></li>
+                <li><a class="dropdown-item" href="#">All Electronics</a></li>
+                <li><a class="dropdown-item" href="#">Appliances</a></li>
+                <li><a class="dropdown-item" href="#">Air Conditioners</a></li>
+                <li><a class="dropdown-item" href="#">Refrigerators</a></li>
+                <li><a class="dropdown-item" href="#">Washing Machines</a></li>
+                <li><a class="dropdown-item" href="#">Kitchen & Home Appliances</a></li>
+                <li><a class="dropdown-item" href="#">Heating & Cooling Appliances</a></li>
+                <li><a class="dropdown-item" href="#">All Appliances</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">TV, Appliances</a> -->
+        <div class="dropdown">
+            <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                Men's Fashion
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Clothing</a></li>
+                <li><a class="dropdown-item" href="#">T-shirts & Polos</a></li>
+                <li><a class="dropdown-item" href="#">Shirts</a></li>
+                <li><a class="dropdown-item" href="#">Jeans</a></li>
+                <li><a class="dropdown-item" href="#">Innerwear</a></li>
+                <li><a class="dropdown-item" href="#">Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Watches</a></li>
+                <li><a class="dropdown-item" href="#">Bags & Luggage</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Men's Fashion</a> -->
+        <div class="dropdown">
+            <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                Women's Fashion
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Kitchen & Dining</a></li>
+                <li><a class="dropdown-item" href="#">Kitchen Storage & Containers</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+                <li><a class="dropdown-item" href="#">Home Furnishing</a></li>
+                <li><a class="dropdown-item" href="#">Bedroom Linen</a></li>
+                <li><a class="dropdown-item" href="#">Home Décor</a></li>
+                <li><a class="dropdown-item" href="#">Garden & Outdoors</a></li>
+                <li><a class="dropdown-item" href="#">Home Storage</a></li>
+                <li><a class="dropdown-item" href="#">Indoor Lighting</a></li>
+                <li><a class="dropdown-item" href="#">Home Unique Products</a></li>
+                <li><a class="dropdown-item" href="#">Sewing & Craft</a></li>
+                <li><a class="dropdown-item" href="#">All Home & Kitchen</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Women's Fashion</a> -->
+        <!-- Home, Kitchen -->
+        <div class="dropdown">
+            <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                Home, Kitchen
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Kitchen & Dining</a></li>
+                <li><a class="dropdown-item" href="#">Kitchen Storage & Containers</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+                <li><a class="dropdown-item" href="#">Home Furnishing</a></li>
+                <li><a class="dropdown-item" href="#">Bedroom Linen</a></li>
+                <li><a class="dropdown-item" href="#">Home Décor</a></li>
+                <li><a class="dropdown-item" href="#">Garden & Outdoors</a></li>
+                <li><a class="dropdown-item" href="#">Home Storage</a></li>
+                <li><a class="dropdown-item" href="#">Indoor Lighting</a></li>
+                <li><a class="dropdown-item" href="#">Home Unique Products</a></li>
+                <li><a class="dropdown-item" href="#">Sewing & Craft</a></li>
+                <li><a class="dropdown-item" href="#">All Home & Kitchen</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Home, Kitchen</a> -->
+        <div class="dropdown">
+            <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                Beauty, Fitness, Bags
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Beauty & Grooming</a></li>
+                <li><a class="dropdown-item" href="#">Luxury Beauty</a></li>
+                <li><a class="dropdown-item" href="#">Make-up kit</a></li>
+                <li><a class="dropdown-item" href="#">Household Supplies</a></li>
+                <li><a class="dropdown-item" href="#">Personal Care Appliances</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Beauty, Fitness, Bags</a> -->
+        <div class="dropdown">
+            <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                Toys, Baby Products Kids' Fashion
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Toys & Games</a></li>
+                <li><a class="dropdown-item" href="#">Baby Products</a></li>
+                <li><a class="dropdown-item" href="#">Diapers</a></li>
+                <li><a class="dropdown-item" href="#">Toys Gifting Store</a></li>
+                <li><a class="dropdown-item" href="#">STEM Toys Store</a></li>
+                <li><a class="dropdown-item" href="#">International Toy Store</a></li>
+                <li><a class="dropdown-item" href="#">Baby Bath, Skin & Grooming</a></li>
+                <li><a class="dropdown-item" href="#">Strollers & Prams</a></li>
+                <li><a class="dropdown-item" href="#">Nursing & Feeding</a></li>
+                <li><a class="dropdown-item" href="#">Kids' Clothing</a></li>
+                <li><a class="dropdown-item" href="#">Kids' Shoes</a></li>
+                <li><a class="dropdown-item" href="#">School Bags</a></li>
+                <li><a class="dropdown-item" href="#">Kids' Watches</a></li>
+                <li><a class="dropdown-item" href="#">Kids' Fashion</a></li>
+                <li><a class="dropdown-item" href="#">Baby Fashion</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Toys, Baby Products Kids' Fashion</a> -->
+        <div class="dropdown">
+            <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                Books & Office Stationery
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">All Books</a></li>
+                <li><a class="dropdown-item" href="#">Fiction Books</a></li>
+                <li><a class="dropdown-item" href="#">Editor's Corner</a></li>
+                <li><a class="dropdown-item" href="#">School Textbooks</a></li>
+                <li><a class="dropdown-item" href="#">Children's Books</a></li>
+                <li><a class="dropdown-item" href="#">Dharmik Puja Books</a></li>
+                <li><a class="dropdown-item" href="#">Office Stationery Kit</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Books & Office Stationery</a> -->
+        <div class="dropdown">
+            <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                style="background-color: #1f2a35; line-height: 1.2; color:white;">
+                Dharmik Puja
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Puja Kits</a></li>
+                <li><a class="dropdown-item" href="#">Puja Articles</a></li>
+                <li><a class="dropdown-item" href="#">Diyas & Lanterns</a></li>
+                <li><a class="dropdown-item" href="#">Incense Sticks (Agarbatti)</a></li>
+                <li><a class="dropdown-item" href="#">Kapoor</a></li>
+                <li><a class="dropdown-item" href="#">Dhoop</a></li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="category-link-amazon px-3 py-1 mx-1 rounded fw-semibold" style="background-color: #1f2a35; line-height: 1.2;">Dharmik Puja</a> -->
     </div>
 </div>
 
