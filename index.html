@@ -95,6 +95,13 @@
             color: #0d6efd;
             transform: translateX(2px);
         }
+        .card-img-top {
+        transition: transform 0.4s ease; /* smooth animation */
+        }
+
+        .card-img-top:hover {
+        transform: scale(1.1); /* zooms in */
+        }
     </style>
 </head>
 <body>
@@ -417,98 +424,298 @@
     <h2 class="mb-4 text-center">Featured Products</h2>
     <div class="d-flex flex-wrap justify-content-between">
         <!-- Product Item -->
-        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+1" class="card-img-top" alt="Product 1" style="height: 300px; object-fit: cover;">
+        <div id="grocery-section" class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Food Products & Grocery/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 1</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹999</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
-        </div>
+        </div>  
+
 
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+2" class="card-img-top" alt="Product 2" style="height: 300px; object-fit: cover;">
+            <img src="Food Products & Grocery/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 2</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,499</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
 
+
+
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+3" class="card-img-top" alt="Product 3" style="height: 300px; object-fit: cover;">
+            <img src="Food Products & Grocery/3.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 3</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹799</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
 
+
+
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+4" class="card-img-top" alt="Product 4" style="height: 300px; object-fit: cover;">
+            <img src="Food Products & Grocery/4.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 4</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,299</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
 
+
+
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+5" class="card-img-top" alt="Product 5" style="height: 300px; object-fit: cover;">
+            <img src="Food Products & Grocery/5.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 5</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,999</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
 
         <!-- Row 2: Products 6-10 -->
-        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+6" class="card-img-top" alt="Product 6" style="height: 300px; object-fit: cover;">
+         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Ayurvedic Products/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 6</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹899</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
-        </div>
+        </div>  
+
 
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+7" class="card-img-top" alt="Product 7" style="height: 300px; object-fit: cover;">
+            <img src="Ayurvedic Products/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 7</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,199</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
 
+
+
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+8" class="card-img-top" alt="Product 8" style="height: 300px; object-fit: cover;">
+            <img src="Ayurvedic Products/3.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 8</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,399</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
 
+
+
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+9" class="card-img-top" alt="Product 9" style="height: 300px; object-fit: cover;">
+            <img src="Ayurvedic Products/4.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 9</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,599</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
 
+
+
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+10" class="card-img-top" alt="Product 10" style="height: 300px; object-fit: cover;">
+            <img src="Ayurvedic Products/5.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 10</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,099</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+        <!-- Row 3: Products 6-10 -->
+         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Medical Products/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 11</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>  
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Medical Products/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 12</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Medical Products/3.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 13</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Medical Products/4.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 14</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Medical Products/5.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 15</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+       
 <!-- Products Section End -->
 
 
@@ -538,141 +745,989 @@
 </div>
 <!-- Advertisement Banners End -->
 
-
-
-
-
-<!-- Products Section 2 Start -->
-<div class="container-fluid my-5">
-    <h2 class="mb-4 text-center">More Products</h2>
-    <div class="d-flex flex-wrap justify-content-between">
-        <!-- Row 1: Products 1-5 -->
-        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+11" class="card-img-top" alt="Product 11" style="height: 300px; object-fit: cover;">
-            <div class="card-body text-center py-3">
-                <h6 class="card-title">Product 11</h6>
-                <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹899</span>
-            </div>
-        </div>
-        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+12" class="card-img-top" alt="Product 12" style="height: 300px; object-fit: cover;">
-            <div class="card-body text-center py-3">
-                <h6 class="card-title">Product 12</h6>
-                <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,199</span>
-            </div>
-        </div>
-        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+13" class="card-img-top" alt="Product 13" style="height: 300px; object-fit: cover;">
-            <div class="card-body text-center py-3">
-                <h6 class="card-title">Product 13</h6>
-                <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,499</span>
-            </div>
-        </div>
-        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+14" class="card-img-top" alt="Product 14" style="height: 300px; object-fit: cover;">
-            <div class="card-body text-center py-3">
-                <h6 class="card-title">Product 14</h6>
-                <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,299</span>
-            </div>
-        </div>
-        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+15" class="card-img-top" alt="Product 15" style="height: 300px; object-fit: cover;">
-            <div class="card-body text-center py-3">
-                <h6 class="card-title">Product 15</h6>
-                <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹999</span>
-            </div>
-        </div>
-
-        <!-- Row 2: Products 16-20 -->
-        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+16" class="card-img-top" alt="Product 16" style="height: 300px; object-fit: cover;">
+<!-- Row 4: Products 16-20 -->
+         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Mobile & Tablets & More/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 16</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,099</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
-        </div>
+        </div>  
+
+
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+17" class="card-img-top" alt="Product 17" style="height: 300px; object-fit: cover;">
+            <img src="Mobile & Tablets & More/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 17</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,399</span>
-            </div>
-        </div>
-        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+18" class="card-img-top" alt="Product 18" style="height: 300px; object-fit: cover;">
-            <div class="card-body text-center py-3">
-                <h6 class="card-title">Product 18</h6>
-                <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,499</span>
-            </div>
-        </div>
-        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+19" class="card-img-top" alt="Product 19" style="height: 300px; object-fit: cover;">
-            <div class="card-body text-center py-3">
-                <h6 class="card-title">Product 19</h6>
-                <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,199</span>
-            </div>
-        </div>
-        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+20" class="card-img-top" alt="Product 20" style="height: 300px; object-fit: cover;">
-            <div class="card-body text-center py-3">
-                <h6 class="card-title">Product 20</h6>
-                <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,099</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
 
-        <!-- Row 3: Products 21-25 -->
+
+
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+21" class="card-img-top" alt="Product 21" style="height: 300px; object-fit: cover;">
+            <img src="Mobile & Tablets & More/3.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 18</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Mobile & Tablets & More/4.png" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 19</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Mobile & Tablets & More/5.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 20</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+<!-- Row 5: Products 16-20 -->
+         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Computers & Laptop/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 21</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,299</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
-        </div>
+        </div>  
+
+
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+22" class="card-img-top" alt="Product 22" style="height: 300px; object-fit: cover;">
+            <img src="Computers & Laptop/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 22</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,099</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
+
+
+
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+23" class="card-img-top" alt="Product 23" style="height: 300px; object-fit: cover;">
+            <img src="Computers & Laptop/3.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 23</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,399</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
+
+
+
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+24" class="card-img-top" alt="Product 24" style="height: 300px; object-fit: cover;">
+            <img src="Computers & Laptop/4.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 24</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,599</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
+
+
+
         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
-            <img src="https://via.placeholder.com/250x300.png?text=Product+25" class="card-img-top" alt="Product 25" style="height: 300px; object-fit: cover;">
+            <img src="Computers & Laptop/5.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
             <div class="card-body text-center py-3">
                 <h6 class="card-title">Product 25</h6>
                 <p class="card-text text-muted small">Short description</p>
-                <span class="fw-bold">₹1,299</span>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+
+        <!-- Row 6: Products 16-20 -->
+         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="TV, Appliances/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 26</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>  
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="TV, Appliances/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 27</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="TV, Appliances/3.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 28</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="TV, Appliances/4.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 29</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="TV, Appliances/5.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 30</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Row 7: Products 16-20 -->
+         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Men's Fashion/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 31</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>  
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Men's Fashion/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 32</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Men's Fashion/3.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 33</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Men's Fashion/4.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 34</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Men's Fashion/5.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 35</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 8: Products 16-20 -->
+         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Women's Fashion/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 36</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>  
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Women's Fashion/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 37</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Women's Fashion/3.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 38</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Women's Fashion/4.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 39</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Women's Fashion/5.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 40</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 9: Products 16-20 -->
+         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Home, Kitchen/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 41</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>  
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Home, Kitchen/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 42</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Home, Kitchen/3.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 43</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Home, Kitchen/4.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 44</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Home, Kitchen/5.png" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 45</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 10: Products 16-20 -->
+         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Beauty, Fitness, Bags/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 46</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>  
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Beauty, Fitness, Bags/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 47</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Beauty, Fitness, Bags/3.png" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 48</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Beauty, Fitness, Bags/4.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 49</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Beauty, Fitness, Bags/5.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 50</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 11: Products 16-20 -->
+         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Toys, Baby Products Kids' Fashion/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 51</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>  
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Toys, Baby Products Kids' Fashion/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 52</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Toys, Baby Products Kids' Fashion/3.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 53</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Toys, Baby Products Kids' Fashion/4.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 54</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Toys, Baby Products Kids' Fashion/5.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 55</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 12: Products 16-20 -->
+         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Books & Office Stationery/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 56</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>  
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Books & Office Stationery/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 57</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Books & Office Stationery/3.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 58</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Books & Office Stationery/4.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 59</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Books & Office Stationery/5.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 60</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 13: Products 16-20 -->
+         <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Dharmik Puja/1.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 61</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>  
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Dharmik Puja/2.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 61</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Dharmik Puja/3.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 63</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Dharmik Puja/4.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 64</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mb-4" style="flex: 0 0 19%; max-width: 19%; background-color: #f5f5f5;">
+            <img src="Dharmik Puja/5.jpg" 
+                class="card-img-top" 
+                alt="Product 1" 
+                style="height:300px; width:100%; object-fit:contain; background-color:#f5f5f5;">
+            
+            <div class="card-body text-center py-3">
+                <h6 class="card-title">Product 65</h6>
+                <p class="card-text text-muted small">Short description</p>
+
+                <!-- Price Section -->
+                <div>
+                    <span class="text-muted" style="text-decoration: line-through;">₹1,299</span>
+                    <span class="fw-bold text-danger ms-2">₹999</span>
+                </div>
+            </div>
+        </div>
+
+
+
 <!-- Products Section 2 End -->
 
 
